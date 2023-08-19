@@ -8,8 +8,12 @@ const Header = () => (
         <Link to="/">
         <p className="nav-links">Home</p>
         </Link>
+        <Link to="/contact">
         <p className="nav-links">Contacts</p>
+        </Link>
+        <Link to="/about">
         <p className="nav-links">About</p>
+        </Link>
     </div>
 )
 export default Header

@@ -9,6 +9,8 @@ import Login from "./components/Login"
 
 import Home from "./components/Home"
 import Header from "./components/Header"
+import Contact  from "./components/Contact"
+import About from "./components/About"
 
 
 
@@ -18,6 +20,8 @@ const App = () =>  (
   <Routes>
     <Route exact path="/login" element={<Login/>}/>
     <Route exact path="/" element={<Home/>}/>
+    <Route path="/contact" element={<Contact/>}/>
+    <Route path="/about" element={<About/>}/>
   </Routes>
   </BrowserRouter>
   )
