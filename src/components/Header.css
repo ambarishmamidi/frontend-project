@@ -1,19 +1,24 @@
 .header-container {
-    height: 100px;
+    height: 60px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
 
 
 .nav-links {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    padding-right: 20px;
 }
 
 .image {
-    height: 60px;
+    height: 30px;
 }
 
 .link-container {
