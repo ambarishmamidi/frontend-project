@@ -9,21 +9,23 @@ import Login from "./components/Login"
 
 import Home from "./components/Home"
 import Header from "./components/Header"
-import Contact  from "./components/Contact"
-import About from "./components/About"
+import Product  from "./components/Product"
+import Cart from "./components/Cart"
 
 
 
 const App = () =>  (
+  <>
   <BrowserRouter>
   <Header/>
   <Routes>
     <Route exact path="/login" element={<Login/>}/>
     <Route exact path="/" element={<Home/>}/>
-    <Route path="/contact" element={<Contact/>}/>
-    <Route path="/about" element={<About/>}/>
+    <Route exact path="/contact" element={<Product/>}/>
+    <Route exact path="/about" element={<Cart/>}/>
   </Routes>
   </BrowserRouter>
+  </>
   )
 
 export default App;

@@ -1,6 +1,6 @@
-const Contact = () => (
+const Product = () => (
     <div>
         Welcome to Contacts
     </div>
 )
-export default Contact
+export default Product

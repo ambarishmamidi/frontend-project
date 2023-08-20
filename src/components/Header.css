@@ -1,7 +1,22 @@
-
+.header-container {
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 .nav-links {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+}
+
+.image {
+    height: 60px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
 }
