@@ -1,19 +1,8 @@
 import React from "react"
 
-
-
-
-
-
-
-
-
-
-
 import Slider from "react-slick"
 
 import Header from "./Header"
-
 import "./Home.css"
 
 
@@ -72,10 +61,13 @@ const Home = () =>{
     return (
     <div className="home-container">
         <Header/>
-        <Slider {...settings}>
-            <h1>1</h1>
-            <h1>2</h1>
-            <h1>3</h1>
+        <Slider {...settings} controls>
+            <ul>
+                {offerItems.map(each => 
+                    <img src={each.imageUrl} alt="offer"/>
+                    )}
+                </ul>  
+            
         </Slider>
     </div>
 )
