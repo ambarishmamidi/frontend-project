@@ -1,5 +1,12 @@
 .home-container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(#eb7434,#ebc634);
+}
+.slider {
+    height: 400px;
+    width: 100vw;
+}
+.slide-images {
+    height: 400px;
 }

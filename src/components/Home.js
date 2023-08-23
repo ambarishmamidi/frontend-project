@@ -1,6 +1,8 @@
 import React from "react"
 
 import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 import Header from "./Header"
 import "./Home.css"
@@ -38,16 +40,13 @@ import "./Home.css"
 
 const offerItems = [
     {
-        id:1,
-        imageUrl:"https://i.ibb.co/YyRyq9V/images-4.jpg"
+        imageUrl:"https://i.ibb.co/xYWmJkq/images-6.jpg"
     },
     {
-        id:2,
-        imageUrl:"https://i.ibb.co/GTkgyvG/images-5.jpg"
+        imageUrl:"https://i.ibb.co/prVLygq/images-5.jpg"
     },
     {
-        id:3,
-        imageUrl:"https://i.ibb.co/wSSzK8w/images-6.jpg"
+        imageUrl:"https://i.ibb.co/xYWmJkq/images-6.jpg"
     }
 ]
 
@@ -61,12 +60,10 @@ const Home = () =>{
     return (
     <div className="home-container">
         <Header/>
-        <Slider {...settings} controls>
-            <ul>
+        <Slider {...settings} controls className="slider">
                 {offerItems.map(each => 
-                    <img src={each.imageUrl} alt="offer"/>
-                    )}
-                </ul>  
+                    <img src={each.imageUrl} alt="offer" className="slide-images"/>
+                    )} 
             
         </Slider>
     </div>
